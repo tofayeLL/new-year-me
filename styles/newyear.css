@@ -1,4 +1,9 @@
 /* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -17,6 +22,10 @@ body {
 
 
 /* header related styes */
+
+header * {
+    margin-bottom: 30px;
+}
 
 header {
     background-image: url('../images/banner/banner3.png');
@@ -37,7 +46,7 @@ header .header-content {
     color: #FFF;
     font-size: 60px;
     font-weight: 700;
-    margin: 0px;
+
 }
 
 .header-content-descrip {
@@ -58,6 +67,11 @@ main section {
 
 
 /* failure related styles */
+.failure * {
+    margin-bottom: 20px;
+
+}
+
 .failure {
     display: flex;
     gap: 100px;
@@ -74,7 +88,6 @@ main section {
     color: #151414;
     font-size: 40px;
     font-weight: 700;
-    margin: 0px;
 }
 
 .failure-content-descrip,
@@ -86,4 +99,103 @@ main section {
 
 .failure-item {
     margin: 8px 0;
+}
+
+
+/* My plans related styles */
+
+#myplan * {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+#myplan .myplan-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#myplan .plan-content h2 {
+    color: #151414;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#myplan .plan-content p {
+    color: #737272;
+
+}
+
+/* mindset related styles */
+
+#mindset {
+    background-image: url('../images/gradient1.png'), url('../images/watch.png');
+    border-radius: 8px;
+
+
+}
+
+#mindset .mindset-content {
+    max-width: 450px;
+    padding: 60px 0px 60px 65px;
+
+
+}
+
+#mindset .mindset-content h3 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+
+/* footer related styles */
+
+footer .footer-container {
+    display: flex;
+    background-color: #151414;
+}
+
+
+footer .footer-container .footer-text h3 {
+    color: #F8F8F8;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+footer .footer-container .footer-text p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .footer-container .footer-text input[type='email'] {
+    color: white;
+    font-size: 18px;
+    background-color: #151414;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 21px;
+
+}
+
+footer .footer-container .footer-text {
+    max-width: 480px;
+    margin: 80px auto;
+}
+
+footer .footer-container .footer-text * {
+    margin-bottom: 24px;
+}
+
+.btn-footer {
+    background-color: #005FAC;
+    color: white;
+}
+
+footer .footer-container .footer-text .social-link img {
+    margin-right: 10px;
 }
